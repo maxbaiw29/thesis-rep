@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
 
 import tensorflow as tf
 from tensorflow import keras
@@ -75,9 +70,6 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 
 # Train the model
 model.fit(x_train, y_train, batch_size=128, epochs=10, validation_data=(x_test, y_test))
-
-
-# In[ ]:
 
 
 
