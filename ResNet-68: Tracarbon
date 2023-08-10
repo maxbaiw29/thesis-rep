@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
 
 import tensorflow as tf
 from tensorflow import keras
@@ -133,10 +128,5 @@ with tracarbon:
     model.fit(x_train, y_train, batch_size=128, epochs=10, validation_data=(x_test, y_test))
 report = tracarbon.report # to get the report
 print(report)
-
-
-# In[ ]:
-
-
 
 
