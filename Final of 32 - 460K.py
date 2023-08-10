@@ -2,7 +2,6 @@
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
-from codecarbon import EmissionsTracker
 
 # Load the MNIST dataset
 (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
