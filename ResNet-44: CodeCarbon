@@ -1,12 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
+from codecarbon import EmissionsTracker
+
 
 # Load the MNIST dataset
 (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
@@ -93,16 +89,5 @@ model.fit(x_train, y_train, batch_size=128, epochs=1, validation_data=(x_test, y
 
 emissions = tracker.stop()
 print(f"Emissions: {emissions} kg")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 
 
